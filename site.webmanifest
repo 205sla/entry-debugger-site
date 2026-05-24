@@ -1,0 +1,23 @@
+{
+  "name": "Entry Debugger - 엔트리 디버깅 툴",
+  "short_name": "Entry Debugger",
+  "description": "엔트리 만들기 화면에 디버깅 탭과 함수 사용 바로가기, 콘솔 디버깅, 실험실 기능을 더하는 Chrome 확장 프로그램입니다.",
+  "lang": "ko-KR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5096F5",
+  "icons": [
+    {
+      "src": "assets/icon48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
