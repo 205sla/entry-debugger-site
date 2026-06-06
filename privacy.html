@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>개인정보처리방침 - Entry Debugger</title>
+<meta name="description" content="Entry Debugger 크롬 확장 프로그램의 데이터 처리와 개인정보 보호 방침입니다." />
+<meta name="robots" content="index,follow" />
+<meta name="author" content="205 / 이영호" />
+<meta name="theme-color" content="#5096F5" />
+<link rel="canonical" href="https://entry-debugger.205.kr/privacy.html" />
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icon48.png" />
+<link rel="icon" type="image/png" sizes="128x128" href="assets/icon128.png" />
+<link rel="stylesheet" href="page.css" />
+<style>
+  .privacy-main {
+    min-height: calc(100vh - 280px);
+  }
+  .privacy-hero {
+    padding: 88px var(--gutter) 64px;
+    border-bottom: 1px solid var(--border-1);
+    background: #fff;
+  }
+  .privacy-hero-inner,
+  .privacy-content {
+    width: min(100%, 860px);
+    margin: 0 auto;
+  }
+  .privacy-kicker {
+    margin: 0 0 16px;
+    color: var(--c205-mint-deep);
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .privacy-hero h1 {
+    margin: 0;
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+  .privacy-summary {
+    max-width: 680px;
+    margin: 20px 0 0;
+    color: var(--fg-2);
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  .privacy-date {
+    margin: 20px 0 0;
+    color: var(--fg-3);
+    font-size: 14px;
+  }
+  .privacy-content {
+    padding: 64px var(--gutter) 96px;
+  }
+  .privacy-section {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border-1);
+  }
+  .privacy-section:first-child {
+    padding-top: 0;
+  }
+  .privacy-section:last-child {
+    border-bottom: 0;
+  }
+  .privacy-section h2 {
+    margin: 0 0 16px;
+    font-size: 23px;
+    line-height: 1.35;
+    letter-spacing: 0;
+  }
+  .privacy-section p,
+  .privacy-section li {
+    color: var(--fg-2);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .privacy-section p {
+    margin: 0 0 12px;
+  }
+  .privacy-section ul {
+    margin: 0;
+    padding-left: 22px;
+  }
+  .privacy-section a {
+    color: var(--c205-mint-deep);
+  }
+  .privacy-highlight {
+    margin: 0 0 32px;
+    padding: 20px 22px;
+    border-left: 4px solid var(--entry-blue);
+    background: #fff;
+    color: var(--fg-1);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  @media (max-width: 640px) {
+    .privacy-hero {
+      padding-top: 64px;
+    }
+    .privacy-content {
+      padding-top: 48px;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html" aria-label="Entry Debugger 홈">
+      <span class="mark">ED</span>
+      <span class="name">Entry Debugger<small>엔트리 디버깅 툴</small></span>
+    </a>
+    <div class="nav-ctas">
+      <a class="btn btn-ghost btn-sm" href="index.html">홈으로</a>
+    </div>
+  </div>
+</header>
+
+<main class="privacy-main">
+  <section class="privacy-hero">
+    <div class="privacy-hero-inner">
+      <p class="privacy-kicker">PRIVACY POLICY</p>
+      <h1>개인정보처리방침</h1>
+      <p class="privacy-summary">Entry Debugger는 엔트리 작품의 디버깅을 돕기 위해 필요한 정보를 사용자의 브라우저 안에서만 처리합니다.</p>
+      <p class="privacy-date">시행일: 2026년 6월 6일</p>
+    </div>
+  </section>
+
+  <div class="privacy-content">
+    <p class="privacy-highlight"><strong>핵심 원칙:</strong> 확장이 읽는 작품 내용과 설정은 개발자 서버로 전송되지 않으며, 광고·분석·판매 목적으로 사용되지 않습니다.</p>
+
+    <section class="privacy-section">
+      <h2>1. 적용 범위</h2>
+      <p>이 방침은 Chrome Web Store에서 제공되는 Entry Debugger(엔트리 디버깅 툴) 확장 프로그램에 적용됩니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>2. 확장이 처리하는 정보</h2>
+      <ul>
+        <li>엔트리 만들기 화면의 변수, 리스트, 신호, 장면, 함수와 블록 정보</li>
+        <li>사용자가 디버깅 탭에서 직접 입력하거나 변경한 값</li>
+        <li>기능별 활성화 상태와 이미지 저장 배율 같은 확장 설정</li>
+      </ul>
+      <p>작품 정보는 사용자에게 디버깅 기능을 제공하기 위해 현재 페이지에서만 읽거나 수정합니다. 확장 설정은 Chrome의 <code>storage.local</code>에 저장됩니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>3. 수집과 외부 전송</h2>
+      <p>Entry Debugger는 작품 내용, 계정 정보, 사용 기록을 개발자 또는 제3자 서버로 수집하거나 전송하지 않습니다. 별도의 분석 도구, 광고 SDK, 원격 실행 코드도 사용하지 않습니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>4. 이용 목적</h2>
+      <p>처리되는 정보는 변수와 리스트 확인·수정, 신호 전송, 장면 이동, 함수 사용 위치 확인 등 사용자가 직접 요청한 확장 기능을 제공하는 데만 사용됩니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>5. 보관과 삭제</h2>
+      <ul>
+        <li>작품 정보는 확장이 별도로 보관하지 않습니다.</li>
+        <li>확장 설정은 사용자가 초기화하거나 확장을 삭제할 때까지 브라우저에 남을 수 있습니다.</li>
+        <li>디버깅 탭의 설정 초기화 버튼 또는 Chrome의 확장 프로그램 삭제 기능으로 저장된 설정을 제거할 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section class="privacy-section">
+      <h2>6. 권한과 사이트 접근</h2>
+      <p>확장은 기능 설정 저장을 위해 <code>storage</code> 권한을 사용하며, <code>https://playentry.org/ws/*</code> 형태의 엔트리 만들기 화면에서만 콘텐츠 스크립트를 실행합니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>7. 제3자 제공과 판매</h2>
+      <p>Entry Debugger는 사용자 데이터를 제3자에게 제공하거나 판매하지 않으며, 맞춤형 광고 또는 신용 평가에 사용하지 않습니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>8. 외부 링크</h2>
+      <p>확장 또는 소개 페이지에서 사용자가 직접 외부 링크를 열면 해당 사이트의 개인정보처리방침이 적용됩니다. 링크 이동 자체를 제외하고 확장이 외부 사이트로 작품 정보를 전달하지는 않습니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>9. 방침 변경</h2>
+      <p>기능 또는 데이터 처리 방식이 바뀌면 이 페이지를 갱신하고 시행일을 변경합니다. Chrome Web Store의 개인정보 공개 항목도 실제 동작과 일치하도록 유지합니다.</p>
+    </section>
+
+    <section class="privacy-section">
+      <h2>10. 문의</h2>
+      <p>개인정보 보호 또는 확장 프로그램 관련 문의는 개발자 홈페이지 <a href="https://205.kr/" target="_blank" rel="noopener">205.kr</a> 또는 Chrome Web Store 지원 채널을 이용해 주세요.</p>
+      <p>Entry Debugger는 Chrome Web Store 사용자 데이터 정책과 Limited Use 요구사항을 준수합니다.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="foot-bottom">
+    <span>© 2026 205® / 이영호 · Entry Debugger</span>
+    <span><a href="index.html" style="color:inherit;">홈</a> · 개인정보처리방침</span>
+  </div>
+</footer>
+</body>
+</html>
