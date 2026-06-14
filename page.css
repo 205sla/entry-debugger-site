@@ -1931,7 +1931,7 @@ section {
 .credits .eyebrow { color: var(--c205-pink); }
 .credits-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   position: relative;
 }
@@ -1965,7 +1965,7 @@ section {
   background: linear-gradient(135deg, rgba(93,211,200,0.16), rgba(255,157,190,0.12));
   border-color: rgba(93,211,200,0.4);
   display: flex; gap: 18px; align-items: center;
-  grid-column: span 3;
+  grid-column: span 4;
 }
 .credit-card.is-205 .face {
   width: 92px; height: 92px;
