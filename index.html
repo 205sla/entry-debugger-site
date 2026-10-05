@@ -52,7 +52,7 @@
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Chrome",
       "browserRequirements": "Chrome Extension Manifest V3",
-      "softwareVersion": "2.4.0",
+      "softwareVersion": "2.8.1",
       "isAccessibleForFree": true,
       "inLanguage": "ko-KR",
       "url": "https://entry-debugger.205.kr/",
@@ -93,7 +93,7 @@
           "name": "어떤 권한을 사용하나요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "기능별 켜기와 끄기 설정을 저장하기 위해 storage 권한 하나만 사용합니다. 외부 통신이나 다른 탭 접근 권한은 요구하지 않습니다."
+            "text": "일반 설정과 작품별 썸네일 유지 여부를 저장하기 위해 storage 권한을 사용합니다. 선택한 미디어 변환과 캡처는 브라우저에서 처리하며, 작품을 저장하면 준비한 썸네일을 엔트리 서버로 전달합니다."
           }
         },
         {
@@ -125,7 +125,7 @@
     <ul class="nav-links">
       <li><a href="#features">기능</a></li>
       <li><a href="#debug-tab">디버깅 탭</a></li>
-      <li><a href="#labs">실험실</a></li>
+      <li><a href="#labs">편집 도구</a></li>
       <li><a href="#safety">신뢰</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
@@ -146,7 +146,7 @@
       <span class="hero-pill">
         <span class="dot">ED</span>
         <span>Chrome 확장 · Manifest V3</span>
-        <span class="ver">v2.4.0</span>
+        <span class="ver">v2.8.1</span>
       </span>
       <h1>
         엔트리 디버깅을<br/>
@@ -431,41 +431,39 @@
   <div class="section-inner">
     <div class="labs-header">
       <div>
-        <div class="eyebrow">EXPERIMENTAL LAB</div>
-        <h2 class="section-title">고급 기능은<br/>실험실에 모아 뒀어요.</h2>
+        <div class="eyebrow">TOOLS &amp; LAB</div>
+        <h2 class="section-title">필요한 기능을<br/>골라 켜세요.</h2>
         <p class="section-sub" style="margin-bottom:0;">
-          기본은 꺼져 있어요. 필요할 때만 켜고, 프로젝트에 맞게 골라 쓰세요. 깊이 들어갈수록 엔트리 내부 동작을 빌려 쓰기 때문에, 업데이트에 따라 동작이 달라질 수 있어요.
+          디버깅 탭의 설정에서 편집 도구를 선택하세요. 터보 모드·프레임 프로파일러·함수 보관함은 실험실에 있고 기본은 꺼져 있어요. 썸네일 관리자는 별도 탭에서 사용할 수 있습니다.
         </p>
       </div>
       <div class="lab-toggle">
-        <span>실험실</span>
-        <span class="sw"></span>
-        <span style="font-family:var(--font-mono);font-size:11px;color:var(--c205-pink-press);">ON</span>
+        <span>설정 · 실험실에서 선택</span>
       </div>
     </div>
 
     <div class="labs-grid">
       <div class="lab-card">
-        <div class="corner">★ Lab</div>
-        <h4>초시계 · 대답 디버깅 <span class="badge">시스템 변수</span></h4>
-        <p>엔트리 기본 변수인 <b>초시계</b>와 <b>대답</b>의 현재 값을 보고 직접 수정하고, 보이기 / 숨기기까지 제어할 수 있어요.</p>
+        <div class="corner">설정</div>
+        <h4>썸네일 관리자 <span class="badge">이미지 · GIF · 영상</span></h4>
+        <p>파일을 골라 미리 확인하고 작품을 저장하면 커스텀 썸네일이 적용돼요. 같은 브라우저에서 관리자를 켜 두면 저장한 썸네일을 유지할 수 있어요.</p>
         <div class="ill-lab">
-          <div>초시계 = <b style="color:var(--entry-ink);">12.42s</b> · <span style="color:var(--c205-mint-press);">보이기</span></div>
-          <div>대답 = <b style="color:var(--entry-ink);">"노란색"</b> · <span style="color:var(--c205-pink-press);">숨기기 → (500, 0)</span></div>
+          <div>파일 업로드 → 미리보기 → 작품 저장</div>
+          <div>기본 썸네일로 돌아가려면 <b>제거</b> 후 작품을 저장하세요.</div>
         </div>
       </div>
 
       <div class="lab-card">
         <div class="corner">★ Lab</div>
         <h4>터보 모드 <span class="badge">∞ FPS 옵션</span></h4>
-        <p>속도 조절 패널에 ∞ 단계가 추가돼요. FPS는 60으로 유지하면서 <code>Entry.isTurbo</code> 가 켜집니다. 켜져 있는 동안 속도 버튼이 깜빡여 상태를 알려줘요.</p>
+        <p>속도 조절 패널에 ∞ 단계가 추가돼요. 한 프레임에서 더 많은 블록을 실행하며, 켜져 있는 동안 속도 버튼이 깜빡여 상태를 알려줘요.</p>
         <div class="ill-lab ill-shot">
           <img src="assets/real-turbo.png" alt="엔트리 속도 조절 패널의 ∞ 단계가 선택된 상태" />
         </div>
       </div>
 
       <div class="lab-card">
-        <div class="corner">★ Lab</div>
+        <div class="corner">설정</div>
         <h4>속성 검색으로 찾기 <span class="badge">드롭다운 ⌕</span></h4>
         <p>변수 / 리스트 / 신호 드롭다운에 검색 UI가 더해져요. 키워드 입력, 방향키 이동, <b>Enter</b> 선택, <b>Esc</b> 닫기까지 모두 키보드로.</p>
         <div class="ill-lab ill-shot ill-shot-light">
@@ -474,11 +472,30 @@
       </div>
 
       <div class="lab-card">
+        <div class="corner">설정</div>
+        <h4>모양 탭 편의 기능 <span class="badge">이미지 · GIF 묶음 처리</span></h4>
+        <p>엔트리 모양 탭에서 이미지·GIF를 여러 개 올리고, 모양을 묶어 삭제·복제·정렬·이름 변경할 수 있어요. GIF는 프레임별 모양으로 추가됩니다.</p>
+        <div class="ill-lab">
+          <div>모양 탭에서 여러 파일 선택</div>
+          <div>대량 업로드는 나누어 처리하고 진행 중 취소할 수 있어요.</div>
+        </div>
+      </div>
+      <div class="lab-card">
+        <div class="corner">설정</div>
+        <h4>실행화면 초고화질 캡처 <span class="badge">PNG 다운로드</span></h4>
+        <p>실행 중 캡처 버튼을 누르면 현재 장면을 다시 그려 저장해요. 기본 480×270 화면은 1920×1080으로 출력되며 캡처 뒤에는 일시정지를 유지합니다.</p>
+        <div class="ill-lab">
+          <div>SVG · 텍스트 · 도형을 목표 해상도로 렌더링</div>
+          <div>원본 비트맵 이미지의 세부 정보가 늘어나는 것은 아니에요.</div>
+        </div>
+      </div>
+      <div class="lab-card">
         <div class="corner">★ Lab</div>
-        <h4>다량 이미지 업로더 <span class="badge">.eo 일괄</span></h4>
-        <p>여러 이미지를 한 번에 선택하거나 드래그해 떨어뜨려요. 오브젝트 이름을 정하면 <b>.eo</b> 파일로 받거나 엔트리에 바로 추가됩니다.</p>
-        <div class="ill-lab ill-shot ill-shot-light">
-          <img src="assets/real-uploader.png" alt="다량 이미지 업로더 — 오브젝트 이름 입력, 드롭존, 파일 목록, .eo 다운로드 / 엔트리에 추가 버튼" />
+        <h4>프레임 프로파일러 <span class="badge">실행 시간 확인</span></h4>
+        <p>오브젝트와 스크립트별 실행 시간을 확인하고 해당 코드로 이동해요. 일시정지하면 마지막 측정 상태를 볼 수 있고, 정지하면 표시를 정리합니다.</p>
+        <div class="ill-lab">
+          <div>실험실 → 프레임 프로파일러 켜기</div>
+          <div>오브젝트 펼치기 → 스크립트 선택 → 코드 이동</div>
         </div>
       </div>
     </div>
@@ -490,10 +507,10 @@
   <div class="section-inner">
     <div class="boost-inner">
       <div>
-        <div class="eyebrow">BOOST MODE · POPUP</div>
+        <div class="eyebrow">BOOST MODE · WORKSPACE</div>
         <h2 class="section-title">무거운 작품을<br/><span style="color:var(--c205-pink);">조금 더 부드럽게.</span></h2>
         <p class="section-sub" style="margin-bottom:0;">
-          부스트 모드는 실험실이 아니라 <b style="color:#fff;">확장 팝업의 별도 기능</b>이에요. 내부적으로 엔트리의 WebGL 렌더링 옵션 (<code style="background:rgba(255,255,255,0.1);color:var(--c205-mint);padding:2px 6px;border-radius:4px;font-size:0.85em;">Entry.options.useWebGL</code>) 을 켜는 일을 합니다.
+          디버깅 탭의 설정에서 <b style="color:#fff;">부스트 모드 버튼</b>을 표시한 뒤 실행 화면의 버튼으로 켜고 끌 수 있어요. WebGL 렌더링을 사용하며, 변경 후에는 새로고침이 필요합니다.
         </p>
         <div class="boost-checks">
           <div class="c">기본값은 꺼짐입니다. 사용자가 직접 켜야 동작해요.</div>
@@ -509,23 +526,14 @@
 
       <div class="boost-mock">
         <div style="position:relative;z-index:1;">
-          <div style="font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.5);letter-spacing:0.1em;margin-bottom:14px;">EXTENSION POPUP — BOOST</div>
-
-          <div class="boost-real">
-            <img src="assets/real-boost-toggle.png" alt="부스트 모드 토글 — WebGL 렌더링 사용 (새로고침 필요), 켜짐 상태" />
-          </div>
-
-          <div class="fps-card">
-            <div>
-              <div style="font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.6);">EXPECTED FPS</div>
-              <div class="big">60</div>
-            </div>
-            <div style="text-align:right;font-family:var(--font-mono);color:rgba(255,255,255,0.7);font-size:11.5px;">
-              <div>before · 24~32 fps</div>
-              <div>after · 안정 60 fps</div>
-              <div style="color:var(--c205-pink);margin-top:4px;">+ 새로고침 1회</div>
-            </div>
-          </div>
+          <div style="font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.65);letter-spacing:0.1em;margin-bottom:14px;">부스트 모드 사용 순서</div>
+          <ol style="padding-left:22px;margin:0;color:#fff;font-size:18px;line-height:2;">
+            <li>디버깅 → 설정 열기</li>
+            <li>부스트 모드 버튼 표시 켜기</li>
+            <li>실행 화면의 부스트 모드 켜기</li>
+            <li>페이지 새로고침</li>
+          </ol>
+          <p style="margin-top:24px;color:rgba(255,255,255,0.75);line-height:1.7;">효과는 작품과 기기에 따라 달라요. 같은 작품을 실행하며 적용 전후를 비교해 보세요.</p>
         </div>
       </div>
     </div>
@@ -540,10 +548,10 @@
         <div class="eyebrow">POPUP SETTINGS</div>
         <h2 class="section-title">필요한 기능만<br/>골라 켜세요.</h2>
         <p class="section-sub" style="margin-bottom:24px;">
-          확장 팝업에서 각 기능을 개별로 켜고 끌 수 있어요. 가장 위의 마스터 토글을 끄면 전체 기능이 한 번에 꺼집니다. 설정은 storage에 저장돼요.
+          확장 팝업에서는 엔트리 화면의 디버깅 탭을 표시하거나 숨길 수 있어요. 세부 기능은 엔트리 안의 <b>디버깅 → 설정</b>에서 고르고, 실험 기능은 실험실에서 켜세요.
         </p>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-          <li style="display:flex;gap:10px;align-items:center;font-size:14.5px;"><span style="color:var(--c205-mint);font-weight:700;">✓</span> 마스터 / 모든 기능</li>
+          <li style="display:flex;gap:10px;align-items:center;font-size:14.5px;"><span style="color:var(--c205-mint);font-weight:700;">✓</span> 팝업: 디버깅 탭 표시</li>
           <li style="display:flex;gap:10px;align-items:center;font-size:14.5px;"><span style="color:var(--c205-mint);font-weight:700;">✓</span> 디버깅 탭</li>
           <li style="display:flex;gap:10px;align-items:center;font-size:14.5px;"><span style="color:var(--c205-mint);font-weight:700;">✓</span> 함수 사용 바로가기</li>
           <li style="display:flex;gap:10px;align-items:center;font-size:14.5px;"><span style="color:var(--c205-mint);font-weight:700;">✓</span> 콘솔 디버깅</li>
@@ -554,8 +562,11 @@
       </div>
 
       <div class="popup-mock">
-        <div class="popup-real">
-          <img src="assets/real-popup.png" alt="엔트리 디버깅 툴 v2.4.0 확장 팝업 — 디버깅 탭 표시 토글" />
+        <div class="popup-real" style="padding:28px;line-height:1.8;">
+          <h3 style="margin:0 0 16px;">설정은 여기에서</h3>
+          <p><b>Chrome 확장 팝업</b><br/>디버깅 탭 표시 켜기 / 끄기</p>
+          <p><b>엔트리 → 디버깅 → 설정</b><br/>모양 탭 편의 기능, 썸네일 관리자, 캡처 등 기능 선택</p>
+          <p style="margin-bottom:0;"><b>엔트리 → 디버깅 → 실험실</b><br/>터보 모드, 프레임 프로파일러, 함수 보관함</p>
         </div>
       </div>
     </div>
@@ -580,7 +591,7 @@
       <div class="safety-card is-key">
         <span class="key">PERMISSION</span>
         <div class="title">권한은 storage 하나</div>
-        <div class="desc">기능별 켜기 / 끄기 설정을 저장하기 위해 브라우저 storage만 사용해요. 네트워크 권한, 탭 권한, 쿠키 권한은 요청하지 않습니다.</div>
+        <div class="desc">일반 설정과 작품별 썸네일 유지 여부를 확장 저장소에 보관해요. 부스트와 프레임 프로파일러의 활성화 여부는 엔트리 사이트의 로컬 저장소에도 기록합니다.</div>
       </div>
       <div class="safety-card is-key">
         <span class="key">PLATFORM</span>
@@ -609,8 +620,8 @@
       </div>
       <div class="safety-card">
         <span class="key">DATA</span>
-        <div class="title">확장 프로그램은 외부 전송 없음</div>
-        <div class="desc">확장 프로그램이 읽는 변수 값, 리스트 내용, 프로젝트 내용은 어디로도 전송되지 않아요. 모든 처리는 사용자의 브라우저 안에서만 일어납니다.</div>
+        <div class="title">개발자 서버로 데이터 전송 없음</div>
+        <div class="desc">디버깅·변환·캡처는 브라우저에서 처리해요. 작품을 저장하면 준비한 썸네일은 엔트리 서버로 전달됩니다. 보관·삭제 방법은 <a href="privacy.html">개인정보처리방침</a>에서 확인하세요.</div>
       </div>
     </div>
   </div>
@@ -645,7 +656,7 @@
         </button>
         <div class="faq-a">
           <span class="amk">A.</span>
-          <p class="atxt">기능별 켜기 / 끄기 설정을 저장하기 위해 <b>storage</b> 권한 하나만 사용해요. 외부 통신이나 다른 탭 접근 권한은 요구하지 않습니다.</p>
+          <p class="atxt">일반 설정과 작품별 썸네일 유지 여부를 저장하기 위해 <b>storage</b> 권한을 사용해요. 선택한 미디어 변환과 캡처는 브라우저에서 처리하며, 작품을 저장하면 준비한 썸네일을 엔트리 서버로 전달합니다.</p>
           <span></span>
         </div>
       </div>
@@ -671,7 +682,7 @@
         </button>
         <div class="faq-a">
           <span class="amk">A.</span>
-          <p class="atxt">아닙니다. 실험실 탭과 그 안의 모든 기능은 <b>기본적으로 꺼져 있고</b>, 사용자가 팝업에서 직접 켜야 동작해요.</p>
+          <p class="atxt">아닙니다. 실험실 탭과 그 안의 모든 기능은 <b>기본적으로 꺼져 있고</b>, 디버깅 탭의 설정에서 실험실을 표시한 뒤 필요한 기능을 켜야 동작해요.</p>
           <span></span>
         </div>
       </div>
@@ -766,7 +777,7 @@
       <ul>
         <li><a href="#features">핵심 기능</a></li>
         <li><a href="#debug-tab">디버깅 탭</a></li>
-        <li><a href="#labs">실험실</a></li>
+        <li><a href="#labs">편집 도구</a></li>
         <li><a href="#safety">신뢰 · 안전</a></li>
       </ul>
     </div>
